@@ -1,3 +1,7 @@
+// Original matrix manipulation library
+// by Akinori Ito
+// 2 June, 2016
+
 #ifndef MYMAT_H
 #define MYMAT_H
 
