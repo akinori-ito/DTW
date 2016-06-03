@@ -12,6 +12,13 @@ class DTWInfo {
     int xsize;
     int ysize;
     MyMatrix<int> *opt;
+    DTWInfo() {
+      opt = 0;
+    }
+    ~DTWInfo() {
+      if (opt != 0)
+        delete opt;
+    }
 };
 
 void dtwbase(MyMatrix<double>& x, MyMatrix<double>& y, int window, DTWInfo &info);

@@ -1,6 +1,6 @@
 #include <Rcpp.h>
 #include "DTW.h"
-#include "Mymat.h"
+#include "MyMat.h"
 
 using namespace Rcpp;
 
