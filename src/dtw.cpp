@@ -26,13 +26,10 @@ List dtw_(NumericMatrix x, NumericMatrix y, int window) {
     opt(i,0) = info.opt->at(i,0);
     opt(i,1) = info.opt->at(i,1);
   }
-  List ret;
-  ret["xsize"] = x.nrow();
-  ret["ysize"] = y.nrow();
-  //ret["d"] = d;
-  //ret["g"] = g;
-  //ret["bp"] = bp;
-  ret["opt"] = opt;
-  //ret["jcenter"] = jcenter;
+  List ret = List::create(
+    Named("xsize") = x.nrow(),
+    Named("yzize") = y.nrow(),
+    Named("opt") = opt
+  );
   return ret;
 }
