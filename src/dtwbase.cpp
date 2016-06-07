@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdio>
 #include "MyMat.h"
-#include "DTW.h"
+#include "dtw.h"
 
 //using namespace Rcpp;
 

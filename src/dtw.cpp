@@ -1,5 +1,5 @@
 #include <Rcpp.h>
-#include "DTW.h"
+#include "dtw.h"
 #include "MyMat.h"
 
 using namespace Rcpp;
