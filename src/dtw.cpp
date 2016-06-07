@@ -28,7 +28,7 @@ List dtw_(NumericMatrix x, NumericMatrix y, int window) {
   }
   List ret = List::create(
     Named("xsize") = x.nrow(),
-    Named("yzize") = y.nrow(),
+    Named("ysize") = y.nrow(),
     Named("opt") = opt
   );
   return ret;
