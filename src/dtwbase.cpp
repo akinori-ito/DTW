@@ -45,7 +45,7 @@ void dtwbase(MyMatrix<double>& x, MyMatrix<double>& y,
   const double Large = 1.0e7; //arbitrary
   int x_size = x.nrow();
   int y_size = y.nrow();
-  int wlimit = y_size; //2*window+1;
+  int wlimit = 2*window+1;
   MyMatrix<double> g(x_size,wlimit); //<- array(Inf,dim=c(x_size,wlimit))
   MyMatrix<double> d(x_size,wlimit); // <- array(Inf,dim=c(x_size,wlimit))
   MyMatrix<int> bp(x_size,wlimit); // <- array(0,dim=c(x_size,wlimit))
